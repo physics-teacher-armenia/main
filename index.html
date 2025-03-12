@@ -1,59 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hy">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Physics Teacher</title>
+  <title>Ֆիզիկայի Դասարան</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 font-sans">
   <nav class="bg-white shadow-md">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between h-16">
-        <div class="flex">
-          <!-- Logo -->
-          <div class="flex-shrink-0 flex items-center text-xl font-bold text-blue-700">
-            ⚛️ PhysicsClass
-          </div>
-          <!-- Links -->
-          <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-            <a href="#" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Home</a>
-            <a href="#" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Lessons</a>
-            <a href="#" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Experiments</a>
-            <a href="#" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Resources</a>
-            <a href="#" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Contact</a>
-          </div>
+      <div class="flex flex-col items-center justify-center py-4">
+        <!-- Logo -->
+        <div class="text-2xl font-bold text-blue-700 mb-2">
+          ⚛️ Ֆիզիկայի Դասարան
         </div>
-
-        <!-- Mobile menu button -->
-        <div class="flex items-center sm:hidden">
-          <button id="menu-toggle" class="text-gray-700 hover:text-blue-600 focus:outline-none focus:text-blue-600">
-            <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-              <path class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M4 6h16M4 12h16M4 18h16"/>
-            </svg>
-          </button>
+        <!-- Centered Links -->
+        <div class="flex space-x-6">
+          <a href="#" class="text-gray-700 hover:text-blue-600 text-sm font-medium">Գլխավոր</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600 text-sm font-medium">Դասեր</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600 text-sm font-medium">Փորձեր</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600 text-sm font-medium">Աղբյուրներ</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600 text-sm font-medium">Կապ</a>
         </div>
       </div>
     </div>
-
-    <!-- Mobile menu -->
-    <div id="mobile-menu" class="sm:hidden hidden px-2 pt-2 pb-3 space-y-1">
-      <a href="#" class="block text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-base font-medium">Home</a>
-      <a href="#" class="block text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-base font-medium">Lessons</a>
-      <a href="#" class="block text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-base font-medium">Experiments</a>
-      <a href="#" class="block text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-base font-medium">Resources</a>
-      <a href="#" class="block text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-base font-medium">Contact</a>
-    </div>
   </nav>
 
-  <script>
-    const toggleBtn = document.getElementById('menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    toggleBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  </script>
+  <!-- Example content -->
+  <div class="max-w-3xl mx-auto mt-10 text-center">
+    <h1 class="text-3xl font-semibold text-gray-800">Բարի գալուստ Ֆիզիկայի Դասարան</h1>
+    <p class="mt-4 text-gray-600 text-lg">Սովորենք ֆիզիկա՝ պարզ, հետաքրքիր ու գործնական ձևով։</p>
+  </div>
 </body>
 </html>
